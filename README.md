@@ -3,4 +3,4 @@ This Project is allows you to convert Temperatures DCF Technologies : | HTML | C
 
 
 ## Thumbnail 👇
-.[](thumb/nature_screen)
+![](thumb/nature_screen.PNG)
