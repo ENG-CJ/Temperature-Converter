@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="./static/bootstrap.css">
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="stylesheet" href="/static/jquery-3.6.0.min.js">
+
+</head>
+<body>
+    <div class="container mb-0">
+        <h2 class="text-center text-dark text-uppercase">Temperature Converter</h2>
+        <p class="h4 text-center">This is Simple Temperature Converter <br> Use As Converting Temperatures </p>
+        <div class="convertres mt-5">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-6 mt-4 ml-4">
+                    <select name="" id="from_value" onchange="change();" class="form-control w-100">
+                        <option value="Celsius" >Celsius</option>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                        <option value="Kelvin">Kelvin</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <select name="" id="to_value" onchange="change();" class="form-control w-100">
+                        <option value="Fahrenheit">Fahrenheit</option>
+                        <option value="Celsius">Celsius</option>
+                        <option value="Kelvin">Kelvin</option>
+                    </select>
+                </div>
+            </div>
+            <!-- ^ Current Values  -->
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text-muted fs-3" id="from_currentValue">Celsius</h2>
+                    <form action="">
+                    
+                            <div class="form-group">
+                                <input type="text" id="from" value='0' class="form-control w-50">
+                                <span id="from_symbol" style="color: brown;">°C</span>
+                            </div>
+                       
+                        
+                    </form>
+                </div>
+
+                <div class="col-md-6">
+                    <h2 class="text-muted fs-3" id="to_currentValue">Fahrenheit</h2>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" id="to" class="form-control w-50 " value="32" readonly>
+                             <span id='to_symbol' style="color: blueviolet;">°F</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- ^ End Section -->
+            <button class="btn fs-3 btn-primary "
+            onclick="converter()">Convert</button>
+        </div>
+
+    </div>
+
+    <!-- jquery -->
+   
+    <script src="./static/main.js"></script>
+   
+</body>
+</html>
