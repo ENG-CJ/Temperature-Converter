@@ -1,0 +1,42 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: url("https://source.unsplash.com/user/erondu");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: sans-serif verdana;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.container{
+    width: 800px;
+    height: 500px;
+    background: #f4f4f4;
+    /* background-color: #0123; */
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 15px rgba(85, 75, 75, 0.6);
+
+
+}
+.container h2{
+    color: #1b1b11;
+    margin-top: 30px;
+}
+.container .btn{
+    margin-left: 18.5rem;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+.container .btn:hover{
+    color: #1b1b11;
+    background-color: #f4f4f4;
+   
+}
